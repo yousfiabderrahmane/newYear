@@ -3,7 +3,9 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 const countdown = document.getElementById("countdown");
+const loading = document.getElementById("loading");
 const year = document.getElementById("year");
+
 const currentyear = new Date().getFullYear();
 
 const newYearTime = new Date(`January 01 ${currentyear + 1} 00:00:00`);
@@ -22,5 +24,9 @@ function updateCountdown() {
   minutes.innerText = m < 10 ? "0" + m : m;
   seconds.innerText = s < 10 ? "0" + s : s;
 }
+setTimeout(() => {
+  loading.remove();
+  countdown.style.display = "flex";
+}, 1000);
 
 setInterval(updateCountdown, 1000);
