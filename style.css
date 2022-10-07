@@ -42,7 +42,7 @@ h1 {
 .countdown {
   display: flex;
 
-  gap: 15px;
+  gap: 55px;
 }
 .time {
   display: flex;
