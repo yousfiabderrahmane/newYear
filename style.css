@@ -59,7 +59,17 @@ h1 {
   margin: 0;
 }
 
+.year {
+  font-size: 200px;
+  z-index: -1;
+  opacity: 0.3;
+  position: absolute;
+  bottom: 30px;
+}
 @media (max-width: 700px) {
+  body {
+    justify-content: flex-start;
+  }
   .container {
     margin: 0 auto;
     padding: 10px;
@@ -78,5 +88,11 @@ h1 {
   .time small {
     font-size: 12px;
     margin: 0;
+  }
+  .year {
+    font-size: 100px;
+
+    position: absolute;
+    bottom: 70px;
   }
 }

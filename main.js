@@ -3,10 +3,12 @@ const hours = document.getElementById("hours");
 const minutes = document.getElementById("minutes");
 const seconds = document.getElementById("seconds");
 const countdown = document.getElementById("countdown");
-
+const year = document.getElementById("year");
 const currentyear = new Date().getFullYear();
 
 const newYearTime = new Date(`January 01 ${currentyear + 1} 00:00:00`);
+
+year.innerText = currentyear + 1;
 
 function updateCountdown() {
   const currentTime = new Date();
